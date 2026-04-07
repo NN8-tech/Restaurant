@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MAÎTRE D’ | Secure Your Table</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#735c00",
+                        "error-container": "#ffdad6",
+                        "surface": "#fcf9f8",
+                        "on-tertiary-fixed-variant": "#474836",
+                        "surface-container": "#f0eded",
+                        "on-secondary-fixed-variant": "#474747",
+                        "tertiary-container": "#b4b49d",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#574500",
+                        "inverse-surface": "#313030",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#e4e4cc",
+                        "outline": "#7f7663",
+                        "on-background": "#1c1b1b",
+                        "outline-variant": "#d0c5af",
+                        "surface-tint": "#735c00",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "primary-fixed": "#ffe088",
+                        "surface-bright": "#fcf9f8",
+                        "tertiary-fixed-dim": "#c8c8b0",
+                        "on-surface-variant": "#4d4635",
+                        "surface-container-high": "#eae7e7",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-primary-container": "#554300",
+                        "primary-container": "#d4af37",
+                        "secondary-container": "#e4e2e1",
+                        "inverse-primary": "#e9c349",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary-fixed": "#e4e2e1",
+                        "on-primary-fixed": "#241a00",
+                        "background": "#fcf9f8",
+                        "on-tertiary-fixed": "#1b1d0e",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#454634",
+                        "inverse-on-surface": "#f3f0ef",
+                        "tertiary": "#5e604d",
+                        "on-secondary-container": "#656464",
+                        "surface-variant": "#e5e2e1",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#e9c349",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary": "#5f5e5e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1c1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none !important;
+            border-color: #735c00 !important;
+            box-shadow: none !important;
+        }
+        /* Custom number input hide arrows */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 rounded-none bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-yellow-700 dark:text-yellow-500" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="text-2xl font-serif font-bold text-stone-900 dark:text-stone-100 tracking-[0.2em]">MAÎTRE D’</span>
+</div>
+<nav class="hidden md:flex items-center gap-12 font-serif text-stone-900 dark:text-stone-100 tracking-widest uppercase text-sm">
+<a class="text-stone-600 dark:text-stone-400 hover:scale-105 transition-transform duration-300" href="#">The Menu</a>
+<a class="text-stone-600 dark:text-stone-400 hover:scale-105 transition-transform duration-300" href="#">Our Story</a>
+<a class="text-yellow-700 dark:text-yellow-500 border-b border-yellow-700 hover:scale-105 transition-transform duration-300" href="#">RESERVE</a>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-20 px-6">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Hero Editorial Section -->
+<div class="lg:col-span-5 space-y-12">
+<div class="space-y-6">
+<span class="font-label text-xs tracking-[0.3em] uppercase text-primary font-bold">The Dining Room</span>
+<h1 class="font-headline text-5xl md:text-7xl leading-tight text-on-background">Your Seat <br/><i class="font-normal italic">at the table.</i></h1>
+<p class="font-body text-lg text-secondary leading-relaxed max-w-md">
+                        Every reservation is a curated experience. Join us for an evening defined by intentionality, from the first pour to the final bite.
+                    </p>
+</div>
+<!-- Overlapping Image Detail -->
+<div class="relative pt-12">
+<div class="w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up of a minimalist luxury table setting with white linen, polished silverware, and a single stem vase in golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGoe6y1tyt4E0YHn9QEvWMHtUORX0kf8cv9onze89BbZKfFX-98loWRZ4nAgCXNiedCjmVyrEzUPhfPjKwxaXDoWe2zOuL-xOOmarKuaJykgYo-7WtwBjqQDovVGlPjr0JdVaGvUyAwaFkwA4dlRFqwL4xdqC6hrBvFsoUSBgcyfSnj6Sk0XEbRAocY1CtBiob37b0SvDOTLPz-8iuNV8kX8gpTCq8SZREVndrmrLHVqITqTClTC6BWc5q6jExdZJPYuvNX9xM4MM"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-48 h-64 hidden md:block bg-surface-container-highest p-1">
+<img class="w-full h-full object-cover" data-alt="Exquisite plating of a fine dining appetizer with vibrant edible flowers and herb oil drops on a white ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZT749h9S6up1Ab4QGfTH0oqBKQSce9DlOTix31iNK8SbdZwYhrfg2i52ZnP-YKXW20SdQ31F24lsrSK030suKInjeIpFTA-Ocgo2XI2LEDTQ9391nkcexU4UcNdhddqzKHZnHNsrWDX-E-q7ZRKoKKP8gx-rbA1-WTNjnUp5DrY8JxCKBqZpSwsjnO8qvXSa7hY7S2MGlcFqjVFliEGqCO4mPxD0EguKHYqLaA3C6RJejB5WBUIZsa91YmqfALtNa_IB7Etrhpo"/>
+</div>
+</div>
+</div>
+<!-- Booking Form Container -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-16 shadow-[0_40px_80px_-15px_rgba(0,0,0,0.06)] relative z-10">
+<h2 class="font-headline text-3xl mb-12 border-b border-outline-variant/20 pb-8">Reservation Details</h2>
+<form class="space-y-10">
+<!-- Name -->
+<div class="relative">
+<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Guest Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 font-headline text-xl focus:border-primary transition-colors placeholder:text-stone-300" placeholder="Johnathan Doe" type="text"/>
+</div>
+<!-- Date & Guests Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Select Date</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 font-headline text-xl focus:border-primary transition-colors appearance-none" type="date"/>
+</div>
+<div class="relative">
+<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Number of Guests</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 font-headline text-xl focus:border-primary transition-colors appearance-none cursor-pointer">
+<option>2 Guests</option>
+<option>3 Guests</option>
+<option>4 Guests</option>
+<option>5 Guests</option>
+<option>6+ Guests (Contact us)</option>
+</select>
+</div>
+</div>
+<!-- Time Selection -->
+<div class="relative">
+<label class="block font-label text-xs uppercase tracking-widest text-primary mb-6">Preferred Time</label>
+<div class="grid grid-cols-3 md:grid-cols-4 gap-4">
+<button class="py-3 px-2 border border-outline-variant/30 text-sm font-label hover:border-primary transition-all" type="button">18:00</button>
+<button class="py-3 px-2 border border-primary text-primary text-sm font-label bg-primary-container/10" type="button">19:30</button>
+<button class="py-3 px-2 border border-outline-variant/30 text-sm font-label hover:border-primary transition-all" type="button">20:00</button>
+<button class="py-3 px-2 border border-outline-variant/30 text-sm font-label hover:border-primary transition-all" type="button">21:30</button>
+</div>
+</div>
+<!-- Special Requests -->
+<div class="relative">
+<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Special Requests</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant/30 py-4 font-body text-base focus:border-primary transition-colors placeholder:text-stone-300 resize-none" placeholder="Allergies, anniversaries, or seating preferences..." rows="3"></textarea>
+</div>
+<!-- CTA -->
+<div class="pt-8">
+<button class="w-full bg-primary-container text-on-primary-container py-6 font-label font-bold tracking-[0.2em] uppercase hover:bg-primary hover:text-white transition-all duration-500 scale-100 hover:scale-[1.02]" type="submit">
+                            Confirm Reservation
+                        </button>
+<p class="text-center mt-6 text-xs text-secondary font-label tracking-wide">Secure booking powered by Maître D’ Systems</p>
+</div>
+</form>
+</div>
+</div>
+<!-- Reservation Policy -->
+<section class="max-w-4xl mx-auto mt-32 text-center">
+<div class="inline-block w-12 h-px bg-primary mb-12"></div>
+<h3 class="font-headline text-2xl mb-8">Reservation Policy</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+<div class="space-y-4">
+<h4 class="font-label font-bold text-xs uppercase tracking-widest text-primary">Cancellations</h4>
+<p class="text-sm leading-relaxed text-secondary">Please provide at least 24 hours' notice for cancellations. Late cancellations may incur a $50 per guest fee.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label font-bold text-xs uppercase tracking-widest text-primary">Grace Period</h4>
+<p class="text-sm leading-relaxed text-secondary">We hold tables for 15 minutes past the reservation time. After this period, the table may be released.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label font-bold text-xs uppercase tracking-widest text-primary">Attire</h4>
+<p class="text-sm leading-relaxed text-secondary">We kindly request a smart-elegant dress code. Please refrain from wearing athletic apparel or beachwear.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-none mt-32 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<span class="text-lg font-serif italic text-stone-800 dark:text-stone-200">The Digital Maître D’</span>
+<p class="font-sans text-sm tracking-loose leading-relaxed text-stone-500 dark:text-stone-400">
+                    Crafting unforgettable culinary memories since 1994. Our commitment to excellence remains unchanged.
+                </p>
+</div>
+<div class="flex flex-col gap-4 font-sans text-sm tracking-loose leading-relaxed">
+<a class="text-stone-500 dark:text-stone-400 hover:text-yellow-700 dark:hover:text-yellow-500 transition-colors" href="#">The Menu</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-yellow-700 dark:hover:text-yellow-500 transition-colors" href="#">Private Dining</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-yellow-700 dark:hover:text-yellow-500 transition-colors" href="#">Our Story</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-yellow-700 dark:hover:text-yellow-500 transition-colors" href="#">Contact</a>
+</div>
+<div class="space-y-6 md:text-right">
+<div class="font-sans text-sm tracking-loose leading-relaxed text-stone-500 dark:text-stone-400">
+                    1244 Culinary Row<br/>
+                    Gastronomy District, NY 10012
+                </div>
+<div class="text-xs uppercase tracking-[0.2em] text-stone-400">
+                    © 2024 THE DIGITAL MAÎTRE D’. EST. 1994.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
