@@ -309,4 +309,56 @@
 </div>
 </div>
 </footer>
-</body></html>
+        <!-- Supabase Connection -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script&gt;
+
+<script>
+// Your Supabase credentials
+const SUPABASE_URL = 'https://itbwpysgtsssjcnymsyo.supabase.co;;  // paste your URL here
+const SUPABASE_KEY = 'eyJxxxxxxxxxx';              // paste your anon key here
+
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+// Save reservation to Supabase
+async function saveReservation(event) {
+    event.preventDefault();
+
+    const data = {
+        guest_name:       document.querySelector('[name="guest_name"]').value,
+        date:             document.querySelector('[name="date"]').value,
+        time:             document.querySelector('[name="preferred_time"]').value,
+        guests:           document.querySelector('[name="guests"]').value,
+        special_requests: document.querySelector('[name="special_requests"]').value
+    };
+
+    try {
+        const { error } = await supabase
+            .from('reservations')
+            .insert([data]);
+
+        if (error) throw error;
+
+        // Show success message!
+        document.querySelector('form').innerHTML = `
+            <div style="text-align:center; padding:40px;">
+                <div style="font-size:60px;"></div>
+                <h3 style="color:#735c00; font-size:24px; margin:16px 0;">
+                    Reservation Confirmed!
+                </h3>
+                <p style="color:#666;">
+                    We look forward to welcoming you to Maitre D'
+                </p>
+            </div>`;
+
+    } catch (error) {
+        alert('Something went wrong! Please try again ');
+        console.error(error);
+    }
+}
+
+// Attach to form
+window.onload = function() {
+    const form = document.querySelector('form');
+    if (form) form.addEventListener('submit', saveReservation);
+}
+</script>
