@@ -1,101 +1,224 @@
-<!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>MAÎTRE D’ | A Fine Dining Experience Redefined</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<title>MAÎTRE D' | A Fine Dining Experience Redefined</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script&gt;
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap&quot; rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap&quot; rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "primary": "#735c00",
-                        "error-container": "#ffdad6",
-                        "surface": "#fcf9f8",
-                        "on-tertiary-fixed-variant": "#474836",
-                        "surface-container": "#f0eded",
-                        "on-secondary-fixed-variant": "#474747",
-                        "tertiary-container": "#b4b49d",
-                        "error": "#ba1a1a",
-                        "on-primary-fixed-variant": "#574500",
-                        "inverse-surface": "#313030",
-                        "on-error": "#ffffff",
-                        "tertiary-fixed": "#e4e4cc",
-                        "outline": "#7f7663",
-                        "on-background": "#1c1b1b",
-                        "outline-variant": "#d0c5af",
-                        "surface-tint": "#735c00",
-                        "on-secondary-fixed": "#1b1c1c",
-                        "primary-fixed": "#ffe088",
-                        "surface-bright": "#fcf9f8",
-                        "tertiary-fixed-dim": "#c8c8b0",
-                        "on-surface-variant": "#4d4635",
-                        "surface-container-high": "#eae7e7",
-                        "surface-dim": "#dcd9d9",
-                        "secondary-fixed-dim": "#c8c6c5",
-                        "on-primary-container": "#554300",
-                        "primary-container": "#d4af37",
-                        "secondary-container": "#e4e2e1",
-                        "inverse-primary": "#e9c349",
-                        "on-error-container": "#93000a",
-                        "surface-container-low": "#f6f3f2",
-                        "secondary-fixed": "#e4e2e1",
-                        "on-primary-fixed": "#241a00",
-                        "background": "#fcf9f8",
-                        "on-tertiary-fixed": "#1b1d0e",
-                        "on-secondary": "#ffffff",
-                        "on-tertiary": "#ffffff",
-                        "on-tertiary-container": "#454634",
-                        "inverse-on-surface": "#f3f0ef",
-                        "tertiary": "#5e604d",
-                        "on-secondary-container": "#656464",
-                        "surface-variant": "#e5e2e1",
-                        "on-primary": "#ffffff",
-                        "primary-fixed-dim": "#e9c349",
-                        "surface-container-highest": "#e5e2e1",
-                        "secondary": "#5f5e5e",
-                        "surface-container-lowest": "#ffffff",
-                        "on-surface": "#1c1b1b"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0px",
-                        "lg": "0px",
-                        "xl": "0px",
-                        "full": "9999px"
-                    },
-                    "fontFamily": {
-                        "headline": ["Noto Serif"],
-                        "body": ["Manrope"],
-                        "label": ["Manrope"]
-                    }
-                },
-            },
-        }
-    </script>
-<style>
-        body { font-family: 'Manrope', sans-serif; }
-        h1, h2, h3, .font-serif { font-family: 'Noto Serif', serif; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
-        .bg-gold-gradient { background: linear-gradient(45deg, #735c00, #d4af37); }
-    </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary": "#735c00","error-container": "#ffdad6","surface": "#fcf9f8",
+          "on-tertiary-fixed-variant": "#474836","surface-container": "#f0eded",
+          "on-secondary-fixed-variant": "#474747","tertiary-container": "#b4b49d",
+          "error": "#ba1a1a","on-primary-fixed-variant": "#574500","inverse-surface": "#313030",
+          "on-error": "#ffffff","tertiary-fixed": "#e4e4cc","outline": "#7f7663",
+          "on-background": "#1c1b1b","outline-variant": "#d0c5af","surface-tint": "#735c00",
+          "on-secondary-fixed": "#1b1c1c","primary-fixed": "#ffe088","surface-bright": "#fcf9f8",
+          "tertiary-fixed-dim": "#c8c8b0","on-surface-variant": "#4d4635",
+          "surface-container-high": "#eae7e7","surface-dim": "#dcd9d9",
+          "secondary-fixed-dim": "#c8c6c5","on-primary-container": "#554300",
+          "primary-container": "#d4af37","secondary-container": "#e4e2e1",
+          "inverse-primary": "#e9c349","on-error-container": "#93000a",
+          "surface-container-low": "#f6f3f2","secondary-fixed": "#e4e2e1",
+          "on-primary-fixed": "#241a00","background": "#fcf9f8","on-tertiary-fixed": "#1b1d0e",
+          "on-secondary": "#ffffff","on-tertiary": "#ffffff","on-tertiary-container": "#454634",
+          "inverse-on-surface": "#f3f0ef","tertiary": "#5e604d","on-secondary-container": "#656464",
+          "surface-variant": "#e5e2e1","on-primary": "#ffffff","primary-fixed-dim": "#e9c349",
+          "surface-container-highest": "#e5e2e1","secondary": "#5f5e5e",
+          "surface-container-lowest": "#ffffff","on-surface": "#1c1b1b"
+        },
+        "borderRadius": {"DEFAULT":"0px","lg":"0px","xl":"0px","full":"9999px"},
+        "fontFamily": {"headline":["Noto Serif"],"body":["Manrope"],"label":["Manrope"]}
+      }
     }
-  </style>
-  </head>
+  }
+</script>
+<style>
+  body { font-family: 'Manrope', sans-serif; }
+  h1, h2, h3, .font-serif { font-family: 'Noto Serif', serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+  .bg-gold-gradient { background: linear-gradient(45deg, #735c00, #d4af37); }
+  body { min-height: max(884px, 100dvh); }
+
+  /* ─── LOGIN OVERLAY ─── */
+  #login-overlay {
+    position: fixed; inset: 0; z-index: 99999;
+    background: #0d0c0a;
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity 0.8s ease;
+  }
+  #login-overlay.fade-out { opacity: 0; pointer-events: none; }
+
+  /* Animated gold lines background */
+  #login-overlay::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(to right, rgba(212,175,55,0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(212,175,55,0.06) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .login-card {
+    position: relative;
+    background: #13120e;
+    border: 1px solid rgba(212,175,55,0.25);
+    width: 100%; max-width: 420px;
+    padding: 56px 48px;
+    box-shadow: 0 0 80px rgba(212,175,55,0.08), 0 40px 80px rgba(0,0,0,0.6);
+  }
+  .login-card::before {
+    content: '';
+    position: absolute; top: 0; left: 48px; right: 48px; height: 1px;
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  }
+
+  .login-eyebrow {
+    font-family: 'Manrope', sans-serif;
+    font-size: 10px; letter-spacing: 0.35em;
+    text-transform: uppercase; color: #d4af37;
+    margin-bottom: 8px;
+  }
+  .login-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 32px; font-weight: 400;
+    color: #f5f0e8; margin-bottom: 6px; line-height: 1.2;
+    font-style: italic;
+  }
+  .login-subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px; color: rgba(245,240,232,0.4);
+    letter-spacing: 0.05em; margin-bottom: 40px;
+  }
+
+  .login-label {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 9px; font-weight: 700;
+    letter-spacing: 0.3em; text-transform: uppercase;
+    color: rgba(245,240,232,0.5); margin-bottom: 10px;
+  }
+  .login-input {
+    width: 100%; background: rgba(245,240,232,0.04);
+    border: 1px solid rgba(212,175,55,0.2);
+    color: #f5f0e8;
+    font-family: 'Manrope', sans-serif; font-size: 14px;
+    padding: 14px 18px; margin-bottom: 24px;
+    outline: none; transition: border-color 0.3s;
+    box-sizing: border-box;
+  }
+  .login-input:focus { border-color: rgba(212,175,55,0.6); }
+  .login-input::placeholder { color: rgba(245,240,232,0.2); }
+
+  .login-btn {
+    width: 100%;
+    background: #d4af37; color: #13120e;
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px; font-weight: 800;
+    letter-spacing: 0.3em; text-transform: uppercase;
+    padding: 18px; border: none; cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    position: relative; overflow: hidden;
+  }
+  .login-btn:hover { background: #e9c349; transform: translateY(-1px); }
+  .login-btn:active { transform: translateY(0); }
+  .login-btn:disabled { background: #7a6820; cursor: not-allowed; transform: none; }
+
+  .login-error {
+    background: rgba(186,26,26,0.15); border: 1px solid rgba(186,26,26,0.3);
+    color: #ff9999; font-family: 'Manrope', sans-serif;
+    font-size: 12px; padding: 12px 16px; margin-bottom: 20px;
+    display: none; letter-spacing: 0.03em;
+  }
+  .login-divider {
+    display: flex; align-items: center; gap: 16px; margin: 28px 0;
+  }
+  .login-divider span {
+    flex: 1; height: 1px; background: rgba(212,175,55,0.15);
+  }
+  .login-divider p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 10px; letter-spacing: 0.15em;
+    color: rgba(245,240,232,0.25); text-transform: uppercase;
+  }
+  .login-footer {
+    margin-top: 28px; text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px; color: rgba(245,240,232,0.3);
+    letter-spacing: 0.05em;
+  }
+
+  /* spinner */
+  .spinner {
+    display: inline-block; width: 14px; height: 14px;
+    border: 2px solid rgba(19,18,14,0.3);
+    border-top-color: #13120e;
+    border-radius: 50%; animation: spin 0.7s linear infinite;
+    vertical-align: middle; margin-right: 8px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
 <body class="bg-surface text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+<!-- ═══════════════════════════════════════════════
+     LOGIN OVERLAY — shows before any page content
+     ═══════════════════════════════════════════════ -->
+<div id="login-overlay">
+  <div class="login-card">
+
+    <!-- Decorative icon -->
+    <div style="margin-bottom:32px;">
+      <span class="material-symbols-outlined" style="color:#d4af37; font-size:28px; display:block; margin-bottom:20px;" data-icon="restaurant_menu">restaurant_menu</span>
+      <p class="login-eyebrow">Private Access</p>
+      <h2 class="login-title">Welcome Back</h2>
+      <p class="login-subtitle">Sign in to enter the experience</p>
+    </div>
+
+    <div id="login-error" class="login-error"></div>
+
+    <label class="login-label" for="login-email">Email Address</label>
+    <input class="login-input" id="login-email" type="email" placeholder="your@email.com" autocomplete="email"/>
+
+    <label class="login-label" for="login-password">Password</label>
+    <input class="login-input" id="login-password" type="password" placeholder="••••••••" autocomplete="current-password"/>
+
+    <button class="login-btn" id="login-btn" onclick="handleLogin()">
+      Enter
+    </button>
+
+    <div class="login-divider">
+      <span></span>
+      <p>Est. 1994</p>
+      <span></span>
+    </div>
+
+    <p class="login-footer">
+      MAÎTRE D' · Paris, France<br>
+      <span style="opacity:0.5;">Reservations: +33 1 23 45 67 89</span>
+    </p>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     MAIN SITE CONTENT (hidden until logged in)
+     ═══════════════════════════════════════════ -->
+<div id="main-content" style="display:none;">
+
 <!-- TopAppBar -->
 <nav class="fixed top-0 w-full z-50 bg-stone-50/80 backdrop-blur-xl transition-all duration-500">
 <div class="flex justify-between items-center px-6 md:px-12 py-6 w-full max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-yellow-700" data-icon="restaurant_menu">restaurant_menu</span>
-<span class="text-2xl font-serif font-bold text-stone-900 tracking-[0.2em]">MAÎTRE D’</span>
+<span class="text-2xl font-serif font-bold text-stone-900 tracking-[0.2em]">MAÎTRE D'</span>
 </div>
 <div class="hidden md:flex gap-12 items-center">
 <a class="font-serif text-stone-900 tracking-widest uppercase text-sm border-b border-yellow-700 hover:scale-105 transition-transform duration-300" href="index.html">HOME</a>
@@ -103,25 +226,24 @@
 <a class="font-serif text-stone-600 tracking-widest uppercase text-sm hover:scale-105 transition-transform duration-300" href="about.html">OUR STORY</a>
 <a class="font-serif text-stone-600 tracking-widest uppercase text-sm hover:scale-105 transition-transform duration-300" href="contact.html">CONTACT</a>
 </div>
-<a href="reserve.html"><button class="bg-primary-container text-on-primary-container px-8 py-3 font-label text-xs tracking-widest font-bold uppercase hover:scale-105 transition-all duration-300">
-                RESERVE
-            </button></a>
+<div class="flex items-center gap-6">
+  <button onclick="handleLogout()" style="font-family:'Manrope',sans-serif; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:#735c00; background:none; border:none; cursor:pointer; padding:4px 0; border-bottom:1px solid transparent;" onmouseover="this.style.borderBottomColor='#735c00'" onmouseout="this.style.borderBottomColor='transparent'">Sign Out</button>
+  <a href="reserve.html"><button class="bg-primary-container text-on-primary-container px-8 py-3 font-label text-xs tracking-widest font-bold uppercase hover:scale-105 transition-all duration-300">RESERVE</button></a>
+</div>
 </div>
 </nav>
+
 <!-- Hero Section -->
 <header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
 <div class="absolute inset-0 bg-black/40 z-10"></div>
-<img alt="Luxury restaurant interior" class="absolute inset-0 w-full h-full object-cover" data-alt="ultra-luxurious modern restaurant interior with dim warm lighting, crystal glassware, and architectural golden accents at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgPz2UceOaeACSYUCYrfJ01RrkyEWtGV1AW7gwS72xgviP3N0iDhLQLSNp4ES-IZ579NqLcfn22qK1FIa_P4BLZkvZg9MU8zf3BqMapcf7x_q0vY0xtHzX74cT1WAnawfryPxIUnWKutLHlsjfJwieelYZpQ_aPwMSdX9pHrUjep2UQpZRcDd6v4KS7Wz_mbUXViA0X7kO9XpY6-RqkrloNXEl4aBOG2H7YdWpqLzeUb9rjul-g9Pz7FqFKtebWMYHr9scS2XAxKo"/>
+<img alt="Luxury restaurant interior" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgPz2UceOaeACSYUCYrfJ01RrkyEWtGV1AW7gwS72xgviP3N0iDhLQLSNp4ES-IZ579NqLcfn22qK1FIa_P4BLZkvZg9MU8zf3BqMapcf7x_q0vY0xtHzX74cT1WAnawfryPxIUnWKutLHlsjfJwieelYZpQ_aPwMSdX9pHrUjep2UQpZRcDd6v4KS7Wz_mbUXViA0X7kO9XpY6-RqkrloNXEl4aBOG2H7YdWpqLzeUb9rjul-g9Pz7FqFKtebWMYHr9scS2XAxKo"/&gt;
 <div class="relative z-20 text-center px-6 max-w-4xl">
 <p class="text-white/80 font-label tracking-[0.4em] uppercase text-xs mb-6">Est. 1994</p>
 <h1 class="text-5xl md:text-8xl text-white font-serif mb-12 leading-tight">A Fine Dining Experience Redefined</h1>
 <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
 <button class="w-full md:w-auto bg-primary-container text-on-primary-container px-12 py-5 font-label text-sm tracking-widest font-bold uppercase hover:scale-102 transition-all duration-500">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScW8mv_mWsBmOMFK1asxouFrCSfIZUnaRtp1N_TdEq5td8_oA/viewform?usp=header">                   Reserve a Table
-</a></button>
-<button class="w-full md:w-auto border border-white/30 text-white backdrop-blur-sm px-12 py-5 font-label text-sm tracking-widest font-bold uppercase hover:bg-white/10 transition-all duration-500">
-                    View Menu
-                </button>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScW8mv_mWsBmOMFK1asxouFrCSfIZUnaRtp1N_TdEq5td8_oA/viewform?usp=header">Reserve a Table</a></button>
+<button class="w-full md:w-auto border border-white/30 text-white backdrop-blur-sm px-12 py-5 font-label text-sm tracking-widest font-bold uppercase hover:bg-white/10 transition-all duration-500">View Menu</button>
 </div>
 </div>
 <div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 hidden md:block">
@@ -129,33 +251,28 @@
 <div class="w-[1px] h-12 bg-primary-fixed mx-auto mt-4"></div>
 </div>
 </header>
+
 <!-- Our Story Section -->
 <section class="py-32 px-6 md:px-24 bg-surface-container-low overflow-hidden">
 <div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
 <div class="relative">
 <div class="aspect-[4/5] bg-stone-200 overflow-hidden">
-<img alt="Chef plating a dish" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="close-up of a professional chef's hands delicately plating a gourmet dish with tweezers in a high-end kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9b-iwt0PRc26xW9m1RpBsOff7dbxxCMqeEF_Qxiiyofj3n6Si0XxRg_9OeLQgOwKDbP-B2uiAGR6kbIznb917lAjSflo-oVFMbz7ZT7sXF5PJTtFh1ZXVpoSBDOjmhFyR0NpvOE7pfkAAScicAHdEWli6mvxy-rolR1e-69TLYA-TvY8672pN8l7ZhQ5TC2dILT6vEelsmZXc6H94pZScRdRif6TmtzL9MDHdCZhVphu5zbKkkQjpq74v8hsnjJLfTj8JZhxeyuw"/>
+<img alt="Chef plating a dish" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9b-iwt0PRc26xW9m1RpBsOff7dbxxCMqeEF_Qxiiyofj3n6Si0XxRg_9OeLQgOwKDbP-B2uiAGR6kbIznb917lAjSflo-oVFMbz7ZT7sXF5PJTtFh1ZXVpoSBDOjmhFyR0NpvOE7pfkAAScicAHdEWli6mvxy-rolR1e-69TLYA-TvY8672pN8l7ZhQ5TC2dILT6vEelsmZXc6H94pZScRdRif6TmtzL9MDHdCZhVphu5zbKkkQjpq74v8hsnjJLfTj8JZhxeyuw"/&gt;
 </div>
-<!-- Asymmetric overlap -->
 <div class="absolute -bottom-10 -right-10 hidden md:block w-64 h-80 border-[12px] border-surface z-10">
-<img alt="Restaurant Detail" class="w-full h-full object-cover" data-alt="detailed shot of a vintage wine bottle and a gold-rimmed glass on a marble table with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkQGpbXNPIi5xnhdG9z1vqMUw6jVr2DLnsAbOxKKu8YZH8oC-KqnKQKYCjFCWfl2Wvr4QMH5X84IOAzKhxwVpBcki5wGIoDtXH7JsiQgDZBvMo8m5FcEfdNRtBuatxYM_ZaGKPPjm60b5PBfK_60ikKoZjhptU3PE8tzpXzSrrK9EPE_1x8haGWIJIb9NlsRdjmSWlNF2SmrFLLKuypYUvqS5xZEktOycbgE4h3Ts_tGjfg2QxwT4TB9CL5mPawWZwr4X9ndFdN_M"/>
+<img alt="Restaurant Detail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkQGpbXNPIi5xnhdG9z1vqMUw6jVr2DLnsAbOxKKu8YZH8oC-KqnKQKYCjFCWfl2Wvr4QMH5X84IOAzKhxwVpBcki5wGIoDtXH7JsiQgDZBvMo8m5FcEfdNRtBuatxYM_ZaGKPPjm60b5PBfK_60ikKoZjhptU3PE8tzpXzSrrK9EPE_1x8haGWIJIb9NlsRdjmSWlNF2SmrFLLKuypYUvqS5xZEktOycbgE4h3Ts_tGjfg2QxwT4TB9CL5mPawWZwr4X9ndFdN_M"/&gt;
 </div>
 </div>
 <div class="lg:pl-12">
 <div class="w-12 h-[2px] bg-primary mb-12"></div>
 <h2 class="text-4xl md:text-6xl font-serif text-on-background mb-8 leading-tight italic">The Art of Silent Service</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed font-body mb-8 max-w-xl">
-                    For three decades, MAÎTRE D’ has stood as a bastion of culinary excellence. Our philosophy is rooted in the "unspoken"—an effortless flow of hospitality where every detail is anticipated before it is requested.
-                </p>
-<p class="text-on-surface-variant text-lg leading-relaxed font-body mb-12 max-w-xl">
-                    We bridge the gap between traditional heritage and contemporary innovation, sourcing exclusively from local micro-farms to ensure that every plate tells a story of the season.
-                </p>
-<a class="inline-block text-primary font-label font-bold tracking-widest uppercase text-xs border-b border-primary pb-2 hover:translate-x-2 transition-transform duration-300" href="#">
-                    Discover Our Heritage
-                </a>
+<p class="text-on-surface-variant text-lg leading-relaxed font-body mb-8 max-w-xl">For three decades, MAÎTRE D' has stood as a bastion of culinary excellence. Our philosophy is rooted in the "unspoken"—an effortless flow of hospitality where every detail is anticipated before it is requested.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed font-body mb-12 max-w-xl">We bridge the gap between traditional heritage and contemporary innovation, sourcing exclusively from local micro-farms to ensure that every plate tells a story of the season.</p>
+<a class="inline-block text-primary font-label font-bold tracking-widest uppercase text-xs border-b border-primary pb-2 hover:translate-x-2 transition-transform duration-300" href="#">Discover Our Heritage</a>
 </div>
 </div>
 </section>
+
 <!-- Featured Dishes Section -->
 <section class="py-32 px-6 md:px-12 bg-surface">
 <div class="max-w-screen-2xl mx-auto">
@@ -164,81 +281,60 @@
 <p class="text-primary font-label tracking-[0.3em] uppercase text-xs mb-4">Seasonal Selections</p>
 <h2 class="text-4xl md:text-6xl font-serif text-on-background uppercase tracking-tight">Featured Dishes</h2>
 </div>
-<p class="text-on-surface-variant font-body max-w-xs text-right hidden md:block">
-                    A curated selection of our most celebrated creations, rotating weekly based on the morning's harvest.
-                </p>
+<p class="text-on-surface-variant font-body max-w-xs text-right hidden md:block">A curated selection of our most celebrated creations, rotating weekly based on the morning's harvest.</p>
 </div>
-<!-- Bento Grid Style for Dishes -->
 <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-<!-- Large Item -->
 <div class="md:col-span-8 group cursor-pointer">
 <div class="aspect-[16/9] overflow-hidden mb-6 bg-stone-100">
-<img alt="Signature Dish" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="artistic plating of roasted scallops with coral tuile and herb emulsion on a handmade ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt2msg0SGC_kN-t2UP9CpwbrJcH0iX0_0l0QrgCwBD5M8Ey0MufGW83NL9x2t9V6y4ZG9HFSQ8AHIW8YJ67VGJ8cNuCVWla_16Kv0WR-alxLqdiFoD9fxnQYhRgE3oXGgr7t9sFehA13qb47_3YFRGeNSagGyZ2Jcd5d5fV9pu2a4eQGHaODkhFCEgNpKiNxrKWNnPxIzrKcAOiUYseS3vvsCJXdhv_ppo2fn9IdFHaO45cs3QGSQ6WTAsdIysTqRVYXWA0ZcgmWI"/>
+<img alt="Signature Dish" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt2msg0SGC_kN-t2UP9CpwbrJcH0iX0_0l0QrgCwBD5M8Ey0MufGW83NL9x2t9V6y4ZG9HFSQ8AHIW8YJ67VGJ8cNuCVWla_16Kv0WR-alxLqdiFoD9fxnQYhRgE3oXGgr7t9sFehA13qb47_3YFRGeNSagGyZ2Jcd5d5fV9pu2a4eQGHaODkhFCEgNpKiNxrKWNnPxIzrKcAOiUYseS3vvsCJXdhv_ppo2fn9IdFHaO45cs3QGSQ6WTAsdIysTqRVYXWA0ZcgmWI"/&gt;
 </div>
 <div class="flex justify-between items-start">
-<div>
-<h3 class="text-2xl font-serif uppercase tracking-wider mb-2">Atlantic Scallops</h3>
-<p class="text-on-surface-variant text-sm font-body italic">Saffron infusion, wild samphire, citrus reduction</p>
-</div>
+<div><h3 class="text-2xl font-serif uppercase tracking-wider mb-2">Atlantic Scallops</h3><p class="text-on-surface-variant text-sm font-body italic">Saffron infusion, wild samphire, citrus reduction</p></div>
 <span class="text-primary font-serif text-xl">$48</span>
 </div>
 </div>
-<!-- Small Item 1 -->
 <div class="md:col-span-4 group cursor-pointer">
 <div class="aspect-square overflow-hidden mb-6 bg-stone-100">
-<img alt="Small Plate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="prime wagyu beef tartare with gold leaf and quail egg yolk served on a dark slate block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt-K6bFlyT3pB9G3IedmLxS7ddtQ48N4YsCMJC7tSdoA8711ZPL-Nn099rUnaWF3b3vQ8MkliMgCSdQPsiRjE_YGfKi5-H_oMMl-uw8Kx8y0s6875N5o92BByR2cmMwBX1ezmvTJPU3Spp9fQ-HRoiJ537Fl9x7-J-uUk8Ww8f1EZIgae1MQQCOKbZCIRqOZkogr5gTPnLkR8v1_JRWqe_SIX2_Buw8-dWANzkI5yFBiXpNstk2DcQoYVyCnlBBxLNGehdefVf0j8"/>
+<img alt="Small Plate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt-K6bFlyT3pB9G3IedmLxS7ddtQ48N4YsCMJC7tSdoA8711ZPL-Nn099rUnaWF3b3vQ8MkliMgCSdQPsiRjE_YGfKi5-H_oMMl-uw8Kx8y0s6875N5o92BByR2cmMwBX1ezmvTJPU3Spp9fQ-HRoiJ537Fl9x7-J-uUk8Ww8f1EZIgae1MQQCOKbZCIRqOZkogr5gTPnLkR8v1_JRWqe_SIX2_Buw8-dWANzkI5yFBiXpNstk2DcQoYVyCnlBBxLNGehdefVf0j8"/&gt;
 </div>
 <div class="flex justify-between items-start">
-<div>
-<h3 class="text-2xl font-serif uppercase tracking-wider mb-2">Wagyu Tartare</h3>
-<p class="text-on-surface-variant text-sm font-body italic">Gold leaf, truffle emulsion</p>
-</div>
+<div><h3 class="text-2xl font-serif uppercase tracking-wider mb-2">Wagyu Tartare</h3><p class="text-on-surface-variant text-sm font-body italic">Gold leaf, truffle emulsion</p></div>
 <span class="text-primary font-serif text-xl">$32</span>
 </div>
 </div>
-<!-- Small Item 2 -->
 <div class="md:col-span-4 group cursor-pointer">
 <div class="aspect-square overflow-hidden mb-6 bg-stone-100">
-<img alt="Dessert" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="deconstructed chocolate fondant with hazelnut praline and gold dust decoration on a white plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7VIkhvhMZK6qJvwA1S6DWLUyeItAbsmGMeKVQDBUWSfJ0vCbWqG0CE1Rj-rHUUlxDL5ijn3UBWA5mlsxGwV3JTtIap1Z_2KPIISPXlfuiKaMl2TG2y-9aTikYnMcwz3QeRFrPH3ic1qJCDk9xqmkmKyefIDUcCENuNrDuOi60JgktjqtDAiVn2FuOTKAWTIreNPWcnz1f7ZfTv2dRewZoECZio9-eQHwKbkkH_0qyL3nHZLSv0bfyzhPQ6QM7kD_a0r-768-qsaw"/>
+<img alt="Dessert" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7VIkhvhMZK6qJvwA1S6DWLUyeItAbsmGMeKVQDBUWSfJ0vCbWqG0CE1Rj-rHUUlxDL5ijn3UBWA5mlsxGwV3JTtIap1Z_2KPIISPXlfuiKaMl2TG2y-9aTikYnMcwz3QeRFrPH3ic1qJCDk9xqmkmKyefIDUcCENuNrDuOi60JgktjqtDAiVn2FuOTKAWTIreNPWcnz1f7ZfTv2dRewZoECZio9-eQHwKbkkH_0qyL3nHZLSv0bfyzhPQ6QM7kD_a0r-768-qsaw"/&gt;
 </div>
 <div class="flex justify-between items-start">
-<div>
-<h3 class="text-2xl font-serif uppercase tracking-wider mb-2">Gilded Fondant</h3>
-<p class="text-on-surface-variant text-sm font-body italic">Dark cocoa, hazelnut praline</p>
-</div>
+<div><h3 class="text-2xl font-serif uppercase tracking-wider mb-2">Gilded Fondant</h3><p class="text-on-surface-variant text-sm font-body italic">Dark cocoa, hazelnut praline</p></div>
 <span class="text-primary font-serif text-xl">$24</span>
 </div>
 </div>
-<!-- Long Item -->
 <div class="md:col-span-8 group cursor-pointer">
 <div class="aspect-[21/9] overflow-hidden mb-6 bg-stone-100">
-<img alt="Main Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="roasted rack of lamb with mint pea puree and heritage carrots on a long white serving platter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC385-ETCZaUi34zg4vQwg1pPxqCdOmXEMKyQgEZugstlIJl-_B17GbLPX0sc9byu7rTjentKWzpKp1WivNfDKJDxJqYa0nXyMVmoyL5m-IDfvVw5k8f8gAFJ1Pih1SImGUESO1liczMglI43ZaReT-4IHp-Z3rYW1995ZMoLVnG7D6ElDdc9gVFcR9bKuqeRByE15sA83ehcoBG1HuFvmdgAR982tECC2mA2ve8HYkQDYgqYCPVtMgSISim_aMWNW1iuVFzASKq3E"/>
+<img alt="Main Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC385-ETCZaUi34zg4vQwg1pPxqCdOmXEMKyQgEZugstlIJl-_B17GbLPX0sc9byu7rTjentKWzpKp1WivNfDKJDxJqYa0nXyMVmoyL5m-IDfvVw5k8f8gAFJ1Pih1SImGUESO1liczMglI43ZaReT-4IHp-Z3rYW1995ZMoLVnG7D6ElDdc9gVFcR9bKuqeRByE15sA83ehcoBG1HuFvmdgAR982tECC2mA2ve8HYkQDYgqYCPVtMgSISim_aMWNW1iuVFzASKq3E"/&gt;
 </div>
 <div class="flex justify-between items-start">
-<div>
-<h3 class="text-2xl font-serif uppercase tracking-wider mb-2">Heritage Lamb</h3>
-<p class="text-on-surface-variant text-sm font-body italic">Pea purée, mint reduction, spring vegetables</p>
-</div>
+<div><h3 class="text-2xl font-serif uppercase tracking-wider mb-2">Heritage Lamb</h3><p class="text-on-surface-variant text-sm font-body italic">Pea purée, mint reduction, spring vegetables</p></div>
 <span class="text-primary font-serif text-xl">$56</span>
 </div>
 </div>
 </div>
 </div>
 </section>
+
 <!-- Testimonials Section -->
 <section class="py-32 bg-surface-container overflow-hidden">
 <div class="max-w-screen-xl mx-auto px-6 text-center">
-<span class="material-symbols-outlined text-primary-container text-5xl mb-12" data-icon="format_quote" data-weight="fill" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<span class="material-symbols-outlined text-primary-container text-5xl mb-12" style="font-variation-settings: 'FILL' 1;">format_quote</span>
 <div class="relative">
-<blockquote class="text-3xl md:text-5xl font-serif text-on-background leading-tight mb-12 italic">
-                    "An absolute masterclass in restraint and elegance. The Digital Maître D’ isn't just a name; it’s a standard of excellence that other establishments can only aspire to."
-                </blockquote>
+<blockquote class="text-3xl md:text-5xl font-serif text-on-background leading-tight mb-12 italic">"An absolute masterclass in restraint and elegance. The Digital Maître D' isn't just a name; it's a standard of excellence that other establishments can only aspire to."</blockquote>
 <cite class="not-italic">
 <span class="block text-primary font-label tracking-widest uppercase text-sm font-bold mb-2">THE GASTRONOMY GAZETTE</span>
 <span class="text-on-surface-variant font-body text-xs uppercase tracking-[0.2em]">Five Star Review, 2023</span>
 </cite>
 </div>
-<!-- Social Proof Logos -->
 <div class="mt-24 flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale">
 <span class="font-serif text-2xl tracking-tighter">Michelin Guide</span>
 <span class="font-serif text-2xl tracking-tighter italic">Vogue Dining</span>
@@ -247,33 +343,27 @@
 </div>
 </div>
 </section>
+
 <!-- Reservation CTA Section -->
 <section class="relative py-40 px-6">
 <div class="absolute inset-0 z-0">
-<img alt="Dining Ambience" class="w-full h-full object-cover" data-alt="atmospheric shot of a set dining table with tall candles, fine china, and silver cutlery in a dark moody setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDveeWYjQqGCgd-MJZTE7uD6dYbnS1pKFWwvk9ibUjmHasfS2ufmxWuAy5pXHJPfmcjW9WFyjSPsfV2RCbRUMBdlSKKmdVGI33LoeGRoOedIQOCBhmkN-CJc6vtpvurEK2r_7wACWP99uMnu9F12oqBroegDpT6edPVHGibK8a9HCSspVhGMlWiYavY2qPVJ9HrpC5n7jLotz2wts_e5PnCLsLSQt00NvIj0oMtm4xUMshel2tPFZ8WAXnq-NFGDiJMG4Nkf2T3hjM"/>
+<img alt="Dining Ambience" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDveeWYjQqGCgd-MJZTE7uD6dYbnS1pKFWwvk9ibUjmHasfS2ufmxWuAy5pXHJPfmcjW9WFyjSPsfV2RCbRUMBdlSKKmdVGI33LoeGRoOedIQOCBhmkN-CJc6vtpvurEK2r_7wACWP99uMnu9F12oqBroegDpT6edPVHGibK8a9HCSspVhGMlWiYavY2qPVJ9HrpC5n7jLotz2wts_e5PnCLsLSQt00NvIj0oMtm4xUMshel2tPFZ8WAXnq-NFGDiJMG4Nkf2T3hjM"/&gt;
 <div class="absolute inset-0 bg-stone-900/80"></div>
 </div>
 <div class="relative z-10 max-w-4xl mx-auto text-center">
 <h2 class="text-4xl md:text-7xl font-serif text-white mb-12">Securing Your Table</h2>
-<p class="text-white/70 text-lg font-body mb-12 max-w-2xl mx-auto">
-                We invite you to experience the symphony of flavors and the art of silent service. Reservations are highly recommended and open three months in advance.
-            </p>
-<button class="bg-primary-container text-on-primary-container px-16 py-6 font-label text-sm tracking-widest font-bold uppercase hover:scale-105 transition-all duration-300">
-                Book Your Experience
-            </button>
+<p class="text-white/70 text-lg font-body mb-12 max-w-2xl mx-auto">We invite you to experience the symphony of flavors and the art of silent service. Reservations are highly recommended and open three months in advance.</p>
+<button class="bg-primary-container text-on-primary-container px-16 py-6 font-label text-sm tracking-widest font-bold uppercase hover:scale-105 transition-all duration-300">Book Your Experience</button>
 </div>
 </section>
+
 <!-- Footer -->
 <footer class="bg-stone-100 w-full mt-0">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-6 md:px-12 py-20 max-w-screen-2xl mx-auto">
-<!-- Brand Column -->
 <div>
-<span class="text-lg font-serif italic text-stone-800 block mb-6">THE DIGITAL MAÎTRE D’. EST. 1994.</span>
-<p class="font-sans text-sm tracking-loose leading-relaxed text-stone-500 max-w-xs">
-                    Curating unforgettable moments through the marriage of architectural space and culinary innovation.
-                </p>
+<span class="text-lg font-serif italic text-stone-800 block mb-6">THE DIGITAL MAÎTRE D'. EST. 1994.</span>
+<p class="font-sans text-sm tracking-loose leading-relaxed text-stone-500 max-w-xs">Curating unforgettable moments through the marriage of architectural space and culinary innovation.</p>
 </div>
-<!-- Links Column -->
 <div class="grid grid-cols-2 gap-8">
 <div>
 <h4 class="font-label text-xs font-bold tracking-widest uppercase mb-6 text-stone-900">Explore</h4>
@@ -293,7 +383,6 @@
 </ul>
 </div>
 </div>
-<!-- Location Column -->
 <div class="text-right md:text-left">
 <h4 class="font-label text-xs font-bold tracking-widest uppercase mb-6 text-stone-900">Visit Us</h4>
 <p class="font-sans text-sm text-stone-500 leading-relaxed mb-2">1245 Gourmet Avenue</p>
@@ -302,63 +391,130 @@
 </div>
 </div>
 <div class="border-t border-stone-200 px-6 md:px-12 py-8 flex flex-col md:row justify-between items-center max-w-screen-2xl mx-auto">
-<p class="font-sans text-[10px] tracking-widest uppercase text-stone-400">© 2024 THE DIGITAL MAÎTRE D’. ALL RIGHTS RESERVED.</p>
+<p class="font-sans text-[10px] tracking-widest uppercase text-stone-400">© 2024 THE DIGITAL MAÎTRE D'. ALL RIGHTS RESERVED.</p>
 <div class="flex gap-8 mt-4 md:mt-0">
 <a class="font-sans text-[10px] tracking-widest uppercase text-stone-400 hover:text-stone-900" href="#">Privacy Policy</a>
 <a class="font-sans text-[10px] tracking-widest uppercase text-stone-400 hover:text-stone-900" href="#">Terms of Service</a>
 </div>
 </div>
 </footer>
-        <!-- Supabase Connection -->
+
+</div><!-- /#main-content -->
+
+<!-- ═══════════════════════════════════════
+     SUPABASE + AUTH SCRIPTS
+     ═══════════════════════════════════════ -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script&gt;
-
 <script>
-// Your Supabase credentials
-const SUPABASE_URL = 'https://itbwpysgtsssjcnymsyo.supabase.co;;  // paste your URL here
-const SUPABASE_KEY = 'eyJxxxxxxxxxx';              // paste your anon key here
+  // ─── STEP 1: PASTE YOUR SUPABASE CREDENTIALS HERE ───
+  const SUPABASE_URL = 'https://YOUR_PROJECT.supabase.co&#39;;   // ← replace
+  const SUPABASE_KEY = 'YOUR_ANON_KEY_HERE';                  // ← replace
 
-const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-// Save reservation to Supabase
-async function saveReservation(event) {
-    event.preventDefault();
-
-    const data = {
-        guest_name:       document.querySelector('[name="guest_name"]').value,
-        date:             document.querySelector('[name="date"]').value,
-        time:             document.querySelector('[name="preferred_time"]').value,
-        guests:           document.querySelector('[name="guests"]').value,
-        special_requests: document.querySelector('[name="special_requests"]').value
-    };
-
-    try {
-        const { error } = await supabase
-            .from('reservations')
-            .insert([data]);
-
-        if (error) throw error;
-
-        // Show success message!
-        document.querySelector('form').innerHTML = `
-            <div style="text-align:center; padding:40px;">
-                <div style="font-size:60px;"></div>
-                <h3 style="color:#735c00; font-size:24px; margin:16px 0;">
-                    Reservation Confirmed!
-                </h3>
-                <p style="color:#666;">
-                    We look forward to welcoming you to Maitre D'
-                </p>
-            </div>`;
-
-    } catch (error) {
-        alert('Something went wrong! Please try again ');
-        console.error(error);
+  // ─── CHECK SESSION ON PAGE LOAD ───
+  window.addEventListener('DOMContentLoaded', async () => {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (session) {
+      showSite();
     }
-}
+    // Also listen for auth changes (e.g. tab focus)
+    supabase.auth.onAuthStateChange((_event, session) => {
+      if (session) showSite();
+      else showLogin();
+    });
 
-// Attach to form
-window.onload = function() {
+    // Allow pressing Enter in password field
+    document.getElementById('login-password').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleLogin();
+    });
+    document.getElementById('login-email').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') document.getElementById('login-password').focus();
+    });
+  });
+
+  // ─── LOGIN ───
+  async function handleLogin() {
+    const email    = document.getElementById('login-email').value.trim();
+    const password = document.getElementById('login-password').value;
+    const btn      = document.getElementById('login-btn');
+    const errorBox = document.getElementById('login-error');
+
+    if (!email || !password) {
+      showError('Please enter your email and password.');
+      return;
+    }
+
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span>Entering...';
+    errorBox.style.display = 'none';
+
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+
+    if (error) {
+      btn.disabled = false;
+      btn.innerHTML = 'Enter';
+      showError('Invalid credentials. Please try again.');
+    }
+    // If success, onAuthStateChange fires and calls showSite()
+  }
+
+  // ─── LOGOUT ───
+  async function handleLogout() {
+    await supabase.auth.signOut();
+    showLogin();
+  }
+
+  // ─── UI HELPERS ───
+  function showSite() {
+    const overlay = document.getElementById('login-overlay');
+    overlay.classList.add('fade-out');
+    setTimeout(() => overlay.style.display = 'none', 800);
+    document.getElementById('main-content').style.display = 'block';
+  }
+
+  function showLogin() {
+    document.getElementById('main-content').style.display = 'none';
+    const overlay = document.getElementById('login-overlay');
+    overlay.style.display = 'flex';
+    overlay.classList.remove('fade-out');
+  }
+
+  function showError(msg) {
+    const box = document.getElementById('login-error');
+    box.textContent = msg;
+    box.style.display = 'block';
+  }
+
+  // ─── RESERVATION FORM (existing logic) ───
+  async function saveReservation(event) {
+    event.preventDefault();
+    const data = {
+      guest_name:       document.querySelector('[name="guest_name"]').value,
+      date:             document.querySelector('[name="date"]').value,
+      time:             document.querySelector('[name="preferred_time"]').value,
+      guests:           document.querySelector('[name="guests"]').value,
+      special_requests: document.querySelector('[name="special_requests"]').value
+    };
+    try {
+      const { error } = await supabase.from('reservations').insert([data]);
+      if (error) throw error;
+      document.querySelector('form').innerHTML = `
+        <div style="text-align:center; padding:40px;">
+          <div style="font-size:60px;"></div>
+          <h3 style="color:#735c00; font-size:24px; margin:16px 0;">Reservation Confirmed!</h3>
+          <p style="color:#666;">We look forward to welcoming you to Maître D'</p>
+        </div>`;
+    } catch (error) {
+      alert('Something went wrong! Please try again.');
+      console.error(error);
+    }
+  }
+
+  window.onload = function() {
     const form = document.querySelector('form');
     if (form) form.addEventListener('submit', saveReservation);
-}
+  };
 </script>
+</body>
+</html>
