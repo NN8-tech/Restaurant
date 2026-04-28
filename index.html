@@ -439,17 +439,15 @@
   });
 
   // ─── LOGIN ───
-  async function handleLogin() {
-    const email    = document.getElementById('login-email').value.trim();
-    const password = document.getElementById('login-password').value;
-    const btn      = document.getElementById('login-btn');
-    const errorBox = document.getElementById('login-error');
-
-    if (!email || !password) {
-      showError('Please enter your email and password.');
-      return;
+ async function handleGoogleLogin() {
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: {
+      redirectTo: window.location.href
     }
-
+  });
+  if (error) showError('Google sign in failed. Please try again.');
+}
     btn.disabled = true;
     btn.innerHTML = '<span class="spinner"></span>Entering...';
     errorBox.style.display = 'none';
